@@ -18,6 +18,7 @@ Selenium Grid is used to distribute test execution across multiple nodes, allowi
 infra/ Folder
 This folder contains infrastructure-related code.
 
+api_wrapper: Provides a wrapper for api-related operations.
 base_page.py: Implements the base page class for other page objects.
 browser_wrapper.py: Provides a wrapper for browser-related operations.
 logic/ Folder
