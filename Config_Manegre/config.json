@@ -1,10 +1,15 @@
 {
   "hub" : "http://10.0.0.6:4444",
   "url":"https://app.todoist.com/",
-  "grid": true,
-  "parallel": false,
+  "grid": false,
+  "parallel": true,
   "serial": false,
   "browser": "chrome",
   "platform": "windows",
-  "browser_types": ["chrome", "firefox"]
+  "browser_types": ["chrome", "firefox"],
+  "url_projects_api": "https://api.todoist.com/rest/v2/projects",
+  "Authorization": "Bearer 8af9f0332d9e4353a3d307d237c89bc4d83cf835",
+  "url_sections_api": "https://api.todoist.com/rest/v2/sections",
+  "url_tasks_api": "https://api.todoist.com/rest/v2/tasks",
+  "url_label_api": "https://api.todoist.com/rest/v2/labels"
 }
