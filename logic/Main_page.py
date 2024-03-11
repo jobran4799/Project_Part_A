@@ -1,9 +1,7 @@
 import time
 from selenium.webdriver import Keys, ActionChains
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from infra.Base_Page import BasePage
+from infra.UI.Base_Page import BasePage
 
 
 class MainPage(BasePage):
