@@ -1,8 +1,8 @@
 import unittest
-from infra.Brawser_Wrapper import BrowserWrapper
-from logic.Log_in_page import LoginPage
-from logic.Main_page import MainPage
-from logic.Project_List_Page import ProjectListPage
+from infra.UI.Brawser_Wrapper import BrowserWrapper
+from logic.UI.Log_in_page import LoginPage
+from logic.UI.Main_page import MainPage
+from logic.UI.Project_List_Page import ProjectListPage
 
 
 class Project_List_Page_Test(unittest.TestCase):

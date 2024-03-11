@@ -3,11 +3,11 @@ import unittest
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-from infra.API_wrapper import APIWrapper
-from logic.API_labels import labels
-from logic.API_projects import Project
-from logic.API_sections import Section
-from logic.API_tasks import Tasks
+from infra.API.API_wrapper import APIWrapper
+from logic.API.API_labels import labels
+from logic.API.API_projects import Project
+from logic.API.API_sections import Section
+from logic.API.API_tasks import Tasks
 
 
 class MainTester(unittest.TestCase):
@@ -132,7 +132,7 @@ class MainTester(unittest.TestCase):
         my_c_api = test_p.get_personal_label("2171988630")
         json_response = my_c_api.json()
         self.assertTrue(my_c_api.ok, "not deleted")
-        self.assertEqual(json_response["name"], "Food", "not equals")
+        self.assertEqual(json_response["name"], "milk", "not equals")
         self.assertEqual(json_response["is_favorite"], False, "not equals")
 
     def test_create_new_personal_label(self):

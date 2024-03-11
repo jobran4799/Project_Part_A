@@ -1,15 +1,14 @@
 import time
 from selenium.webdriver import Keys, ActionChains
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from infra.Base_Page import BasePage
+from infra.UI.Base_Page import BasePage
 
 
 class MainPage(BasePage):
     USER_NAME =(By.XPATH, "//span[text() = 'Beyonddev']")
 
-    TASK_INPUT = (By.XPATH, "//div[@class='fb8d74bb _14423c92 _297575f4 c4a9b3ab _5f8879d9']//button [@tabindex='0']")
+    # TASK_INPUT = (By.XPATH, "//div[@class='fb8d74bb _14423c92 _297575f4 c4a9b3ab _5f8879d9']//button [@tabindex='0']")
+    TASK_INPUT = (By.XPATH, "//p[@data-placeholder='Task name']")
     ADD_TASK_NAME = (By.XPATH, "//div[@class = 'UjpFDa7 no-focus-marker XOgsZVX']//p[@class='is-empty is-editor-empty']")
 
     DELETION_INPUT = (By.XPATH,"//div[contains(@class, '_560c1e08')]/div[contains(@class, 'task_content') and text()='test on todoist task']")
@@ -216,6 +215,7 @@ class MainPage(BasePage):
 
     def create_project(self, text_task_name, add_to_favorite):
         self.find_projects_list()
+        time.sleep(2)
         self.clicker_button(self.project_list)
         time.sleep(2)
         self.find_add_project_clicker()

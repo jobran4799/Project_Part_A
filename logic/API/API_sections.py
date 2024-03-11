@@ -1,9 +1,7 @@
 import json
 
-from infra.API_wrapper import APIWrapper
-
 try:
-    with open('../Config_Manegre/config.json') as f:
+    with open('../../Config_Manegre/config.json') as f:
         data = json.load(f)
 except FileNotFoundError:
     print("Error: 'config.json' file not found. Make sure the file exists in the correct location.")
